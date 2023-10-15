@@ -1,0 +1,49 @@
+==================
+Return statement
+==================
+
+call() {
+	return 0
+}
+
+---
+
+(source_file
+	(identifier)
+	(parameter_list)
+	(block
+		(return_statement (number))
+		)
+	)
+)
+
+==================
+Basic class
+==================
+
+class ExampleClass {
+	// function
+	flyTo(city) {
+		return city
+	}
+}
+
+---
+
+(source_file
+	(class_declaration
+		(identifier)
+		(body
+			(comment)
+			(identifier)
+			(parameter_list
+				(identifier)
+			)
+			(body
+				(return_statement (identifier))
+			)
+		)
+	)
+)
+
+		
